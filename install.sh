@@ -7,7 +7,7 @@ git submodule init
 git submodule update
 mkdir build
 cd build
-cp -r ../../../../dependencies/itkv3 .
+cp -r ../../../dependencies/itkv3 .
 cmake .. -DCMAKE_INSTALL_PREFIX="/usr" -DCMAKE_CXX_FLAGS="-fPIC -I'itkv3' -DITKV3_COMPATIBILITY=1" -DBUILD_OUTSIDE_INSIGHT_APPLICATIONS=ON -DBUILD_TESTING=OFF -DFLTK_FLUID_EXECUTABLE="/usr/bin/fluid"
 make
 sudo make install
